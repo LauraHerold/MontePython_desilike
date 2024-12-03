@@ -1,0 +1,6 @@
+# DESI all BAO 2024
+# arxiv:2404.03002
+# adapted from bao_boss_dr12 likelihood
+bao_desi_all.data_directory      = data.path['data']
+bao_desi_all.data_file           = 'DESI_2024/desi_2024_gaussian_bao_ALL_GCcomb_mean.txt'
+bao_desi_all.cov_file            = 'DESI_2024/desi_2024_gaussian_bao_ALL_GCcomb_cov.txt'
