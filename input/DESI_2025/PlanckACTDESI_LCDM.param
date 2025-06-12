@@ -1,0 +1,136 @@
+# PlanckACTDESI_LCDM.param
+
+#------Experiments to test (separated with commas)-----
+data.experiments=['Planck_highl_TTTEEE', 'Planck_lowl_EE', 'Planck_lowl_TT', 'bao_desi_DR2', 'act_dr6_lenslike']
+data.over_sampling=[1, 5]
+
+#------ Parameter list -------
+
+# Cosmological parameters list
+
+data.parameters['omega_b']      = [  2.240,   None, None,      0.015, 0.01, 'cosmo']
+data.parameters['omega_cdm']    = [ 0.131,   None, None,     0.0013,    1, 'cosmo']
+data.parameters['h']            = [ 0.68,     None, None,       0.01,    1, 'cosmo']
+data.parameters['ln10^{10}A_s'] = [  3.0285,   None, None,      0.015,    1, 'cosmo']
+data.parameters['n_s']          = [  0.9621,   None, None,     0.0042,    1, 'cosmo']
+data.parameters['tau_reio']     = [  0.0463,  0.004, None,      0.008,    1, 'cosmo']
+#data.parameters['Omega_m']      = [       1,   None, None,       0,     1,   'cosmo']
+
+### Planck nuisance parameters
+
+data.parameters['A_cib_217']         = [   4.121517e+01,     0,   200,     6.2593,     1, 'nuisance']
+data.parameters['cib_index']         = [    -1.3,  -1.3,  -1.3,          0,     1, 'nuisance']
+data.parameters['xi_sz_cib']         = [    2.857432e-01,     0,     1,       0.33,     1, 'nuisance']
+data.parameters['A_sz']              = [    9.044916,     0,    10,     1.4689,     1, 'nuisance']
+data.parameters['ps_A_100_100']      = [   2.350710e+02,     0,   400,     29.438,     1, 'nuisance']
+data.parameters['ps_A_143_143']      = [    2.641630e+01,     0,   400,     9.9484,     1, 'nuisance']
+data.parameters['ps_A_143_217']      = [    3.412982e+01,     0,   400,     11.356,     1, 'nuisance']
+data.parameters['ps_A_217_217']      = [   1.105524e+02,     0,   400,     10.256,     1, 'nuisance']
+data.parameters['ksz_norm']          = [    4.107797,     0,    10,     2.7468,     1, 'nuisance']
+data.parameters['gal545_A_100']      = [    8.239211,     0,    50,     1.8928,     1, 'nuisance']
+data.parameters['gal545_A_143']      = [   1.303216e+01,     0,    50,     1.8663,     1, 'nuisance']
+data.parameters['gal545_A_143_217']  = [    2.004824e+01 ,     0,   100,     3.8796,     1, 'nuisance']
+data.parameters['gal545_A_217']      = [    9.705355e+01,     0,   400,     6.9759,     1, 'nuisance']
+data.parameters['galf_EE_A_100']     = [   0.055, 0.055, 0.055,          0,     1, 'nuisance']
+data.parameters['galf_EE_A_100_143'] = [   0.040, 0.040, 0.040,          0,     1, 'nuisance']
+data.parameters['galf_EE_A_100_217'] = [   0.094, 0.094, 0.094,          0,     1, 'nuisance']
+data.parameters['galf_EE_A_143']     = [   0.086, 0.086, 0.086,          0,     1, 'nuisance']
+data.parameters['galf_EE_A_143_217'] = [    0.21,  0.21,  0.21,          0,     1, 'nuisance']
+data.parameters['galf_EE_A_217']     = [    0.70,  0.70,  0.70,          0,     1, 'nuisance']
+data.parameters['galf_EE_index']     = [    -2.4,  -2.4,  -2.4,          0,     1, 'nuisance']
+data.parameters['galf_TE_A_100']     = [   1.471846e-01,     0,    10,   0.038762,     1, 'nuisance']
+data.parameters['galf_TE_A_100_143'] = [   1.535328e-01,     0,    10,   0.030096,     1, 'nuisance']
+data.parameters['galf_TE_A_100_217'] = [   4.798909e-01 ,     0,    10,   0.086185,     1, 'nuisance']
+data.parameters['galf_TE_A_143']     = [   2.694108e-01,     0,    10,   0.055126,     1, 'nuisance']
+data.parameters['galf_TE_A_143_217'] = [   5.917305e-01,     0,    10,   0.082349,     1, 'nuisance']
+data.parameters['galf_TE_A_217']     = [    2.176231,     0,    10,    0.27175,     1, 'nuisance']
+data.parameters['galf_TE_index']     = [    -2.4,  -2.4,  -2.4,          0,     1, 'nuisance']
+data.parameters['calib_100T']        = [  9.990068e+02,     0,  3000,    0.61251, 0.001, 'nuisance']
+data.parameters['calib_217T']        = [  9.973555e+02,     0,  3000,    0.63584, 0.001, 'nuisance']
+data.parameters['calib_100P']        = [   1.021, 1.021, 1.021,          0,     1, 'nuisance']
+data.parameters['calib_143P']        = [   0.966, 0.966, 0.966,          0,     1, 'nuisance']
+data.parameters['calib_217P']        = [   1.040, 1.040, 1.040,          0,     1, 'nuisance']
+data.parameters['A_cnoise_e2e_100_100_EE'] = [ 1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_cnoise_e2e_143_143_EE'] = [ 1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_cnoise_e2e_217_217_EE'] = [ 1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_100_100_TT'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_143_143_TT'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_143_217_TT'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_217_217_TT'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_100_100_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_100_143_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_100_217_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_143_143_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_143_217_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_sbpx_217_217_EE'] = [       1,     1,     1,          0,     1, 'nuisance']
+data.parameters['A_planck']          = [ 9.918387e-01,   0.9,   1.1,     0.0025,     1, 'nuisance']
+data.parameters['A_pol']             = [       1,     1,     1,          0, 1, 'nuisance']
+
+# Derived parameters
+data.parameters['z_reio']          = [1, None, None, 0,     1,   'derived']
+data.parameters['Omega_Lambda']    = [1, None, None, 0,     1,   'derived']
+data.parameters['YHe']             = [1, None, None, 0,     1,   'derived']
+data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
+data.parameters['A_s']             = [0, None, None, 0,  1e-9,   'derived']
+data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
+data.parameters['100*theta_s']     = [0, None, None, 0,     1,   'derived']
+data.parameters['Omega_m']    = [1, None, None, 0,     1,   'derived']
+
+# Neutrinos
+#3) Ultra-relativistic species / massless neutrino density: either
+# 'N_ur' or 'Omega_ur' or 'omega_ur' (default: 'N_ur' set to 3.044;
+# see 2008.01074 and 2012.02726. This value is more accurate than the
+# previous default value of 3.046) (note: instead of 'N_ur' you can
+# pass equivalently 'N_eff', although this syntax is deprecated) (one
+# more remark: if you have respectively 1,2,3 massive neutrinos, if
+# you stick to the default value T_ncdm equal to 0.71611, designed to
+# give m/omega of 93.14 eV, and if you want to use N_ur to get N_eff
+# equal to 3.044 in the early universe, then you should pass here
+# respectively 2.0308,1.0176,0.00441)
+
+data.cosmo_arguments['m_ncdm'] = 0.02
+data.cosmo_arguments['N_ur'] = 0.00441
+data.cosmo_arguments['N_ncdm'] = 1
+data.cosmo_arguments['deg_ncdm'] = 3
+data.cosmo_arguments['T_ncdm'] = 0.71611
+
+# Colin Hill's precision settings
+data.cosmo_arguments['YHe'] = 'BBN'
+data.cosmo_arguments['non_linear'] = 'hmcode'
+#data.cosmo_arguments['hmcode_version'] = '2020'
+data.cosmo_arguments['recombination'] = 'HyRec'
+data.cosmo_arguments['lensing'] = 'yes'
+data.cosmo_arguments['output'] = 'lCl,tCl,pCl,mPk'
+data.cosmo_arguments['modes'] = 's'
+data.cosmo_arguments['l_max_scalars'] = 9500
+data.cosmo_arguments['delta_l_max'] = 1800
+data.cosmo_arguments['P_k_max_h/Mpc'] = 100.
+data.cosmo_arguments['l_logstep'] = 1.025
+data.cosmo_arguments['l_linstep'] = 20
+data.cosmo_arguments['perturbations_sampling_stepsize'] = 0.05
+data.cosmo_arguments['l_switch_limber'] = 30.
+data.cosmo_arguments['hyper_sampling_flat'] = 32.
+data.cosmo_arguments['l_max_g'] = 40
+data.cosmo_arguments['l_max_ur'] = 35
+data.cosmo_arguments['l_max_pol_g'] = 60
+data.cosmo_arguments['ur_fluid_approximation'] = 2
+data.cosmo_arguments['ur_fluid_trigger_tau_over_tau_k'] = 130.
+data.cosmo_arguments['radiation_streaming_approximation'] = 2
+data.cosmo_arguments['radiation_streaming_trigger_tau_over_tau_k'] = 240.
+data.cosmo_arguments['hyper_flat_approximation_nu'] = 7000.
+data.cosmo_arguments['transfer_neglect_delta_k_S_t0'] = 0.17
+data.cosmo_arguments['transfer_neglect_delta_k_S_t1'] = 0.05
+data.cosmo_arguments['transfer_neglect_delta_k_S_t2'] = 0.17
+data.cosmo_arguments['transfer_neglect_delta_k_S_e'] = 0.17
+data.cosmo_arguments['accurate_lensing'] = 1
+data.cosmo_arguments['start_small_k_at_tau_c_over_tau_h'] = 0.0004
+data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 0.05
+data.cosmo_arguments['tight_coupling_trigger_tau_c_over_tau_h'] = 0.005
+data.cosmo_arguments['tight_coupling_trigger_tau_c_over_tau_k'] = 0.008
+data.cosmo_arguments['start_sources_at_tau_c_over_tau_h'] = 0.006
+data.cosmo_arguments['l_max_ncdm'] = 30
+data.cosmo_arguments['tol_ncdm_synchronous'] = 1.e-6
+
+#------ Mcmc parameters ----
+
+data.N=10
